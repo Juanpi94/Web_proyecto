@@ -1,0 +1,8 @@
+@use 'vars';
+
+@mixin set-font($ffamily,$fweight,$fsize){
+    font-family: $ffamily;
+    font-weight: $fweight;
+    font-size: $fsize;
+
+}

@@ -1,0 +1,165 @@
+@use 'components';
+@use 'vars';
+@use 'typography';
+@use 'media-queries';
+
+body{
+margin: 0;
+padding: 0;
+}
+
+.title1{
+    @include typography.set-font(vars.$ff-lora,vars.$fw-bold,vars.$fs-title );
+    color: vars.$clr-black;
+    
+    @include media-queries.respond-to(media-queries.$phone){
+      @include typography.set-font(vars.$ff-lora,vars.$fw-bold,vars.$fs-subtitle );
+    }
+}
+
+.title2{
+    @include typography.set-font(vars.$ff-lora,vars.$fw-bold,vars.$fs-title );
+    color: vars.$clr-white;
+
+    @include media-queries.respond-to(media-queries.$phone){
+      
+    }
+}
+
+.base{
+    @include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-base );
+    color: vars.$clr-black;
+    text-decoration: none;
+
+    @include media-queries.respond-to(media-queries.$phone){
+      @include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-mini);
+    }
+}
+
+.base2{
+  @include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-base );
+  color: vars.$clr-white;
+  text-decoration: none;
+
+  @include media-queries.respond-to(media-queries.$phone){
+    @include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-mini);
+  }
+}
+
+.subtitle{
+@include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-subtitle );
+
+@include media-queries.respond-to(media-queries.$phone){
+@include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-base) ;
+}
+}
+
+.subtitle2{
+  @include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-med);
+  color: vars.$clr-white;
+  @include media-queries.respond-to(media-queries.$phone){
+    @include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-base); 
+  }
+
+}
+
+
+
+.bigImg{
+width: 1520px;
+height: 500px;
+
+@include media-queries.respond-to(media-queries.$phone){
+  width: 300px;
+  height: 180px;
+}
+
+}
+
+.medImg{
+  width:650px;
+  height:350px;
+
+  @include media-queries.respond-to(media-queries.$phone){
+    width: 150px;
+    height: 100px;
+    
+  }
+
+}
+
+.imgLogo{
+  width:280px;
+  height:80px;
+
+  @include media-queries.respond-to(media-queries.$phone){
+    width: 100px;
+    height: 40px;
+    
+  }
+
+}
+
+.imgSocial{
+  width:50px;
+  height:50px;
+
+  @include media-queries.respond-to(media-queries.$phone){
+    width: 20px;
+    height: 20px;
+    
+  }
+
+}
+
+.miniImg{
+  width:30px;
+  height:30px;
+}
+
+.btnGreen{
+  @include components.btn(vars.$clr-white);
+  @include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-subtitle );
+  background-color: vars.$clr-darkgreen;
+
+  @include media-queries.respond-to(media-queries.$phone){
+    @include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-base); 
+  }
+  
+
+}  
+
+.btnred{
+  @include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-subtitle);
+  @include components.btn(vars.$clr-white);
+  background-color: red; 
+
+  @include media-queries.respond-to(media-queries.$phone){
+    @include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-base); 
+  }
+
+}  
+
+.btnblue{
+  @include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-subtitle );
+  @include components.btn(vars.$clr-white);
+  background-color: #3b5998;
+
+  @include media-queries.respond-to(media-queries.$phone){
+    @include typography.set-font(vars.$ff-lora,vars.$fw-reg,vars.$fs-base); 
+  }
+}  
+
+
+.bgnav{
+    background-color: vars.$clr-green;  
+  }
+
+.bgcard{
+  background-color: vars.$clr-green;  
+  border-radius: 1rem;
+}
+ 
+.cards{
+width: 16rem;
+}
