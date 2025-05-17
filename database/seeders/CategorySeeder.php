@@ -14,11 +14,11 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         //
-        Category::create(['category' => "Breakfast"]);
-        Category::create(['category' => "Drinks"]);
-        Category::create(['category' => "Lunch"]);
-        Category::create(['category' => "Desserts"]);
-        Category::create(['category' => "Soups"]);
-        Category::create(['category' => "Entrees"]);
+        Category::create(['name' => "Breakfast"]);
+        Category::create(['name' => "Drinks"]);
+        Category::create(['name' => "Lunch"]);
+        Category::create(['name' => "Desserts"]);
+        Category::create(['name' => "Soups"]);
+        Category::create(['name' => "Entrees"]);
     }
 }

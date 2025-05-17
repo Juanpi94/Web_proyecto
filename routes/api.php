@@ -24,6 +24,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/recipes/all', [RecipesCollection::class, 'index']);
 Route::get('/recipes/recipe/{id}', [RecipesCollection::class, 'show']);
 Route::get('/recipes/categories', [RecipesCollection::class, 'categories']);
+Route::get('/recipes/ingredients', [RecipesCollection::class, 'ingredients']);
 Route::get('/recipes/levels', [RecipesCollection::class, 'levels']);
 Route::get('/recipes/occasions', [RecipesCollection::class, 'occasions']);
 Route::get('/recipes/top10', [RecipesCollection::class, 'top10']);

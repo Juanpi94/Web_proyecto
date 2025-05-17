@@ -23,9 +23,9 @@ Route::get('/Profile', function () {
     return view('UserProfile');
 });
 
-// Route::get('/recipe/{id}', function ($id) {
-//     return "testing recipe -> ".$id;
-// });
+Route::get('/', function () {
+    return view('inicio');
+});
 
 
 //IMC

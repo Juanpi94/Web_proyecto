@@ -128,8 +128,14 @@ class RecipesCollection extends Controller
      */
     public function categories()
     {
-        $categories = Category::select('id', 'category')->get();
+        $categories = Category::select('id', 'name')->get();
         return $categories;
+    }
+
+    public function ingredients()
+    {
+        $ingredients = Ingredient::select('id', 'name', 'description')->get();
+        return $ingredients;
     }
 
     /**
